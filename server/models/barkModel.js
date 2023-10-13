@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const postSchema = new mongoose.Schema({
+const barkSchema = new mongoose.Schema({
 
     username: {
         type: String,
@@ -22,6 +22,6 @@ const postSchema = new mongoose.Schema({
     },
 });
 
-const postModel = mongoose.model("bark", postSchema);
+const barkModel = mongoose.model("bark", barkSchema);
 
-export default postModel;
+export default barkModel;
