@@ -5,6 +5,7 @@ import * as dotenv from "dotenv";
 import colors from "colors";
 import router from "./routes/testRoute.js";
 import barkRoutes from "./routes/barkRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 
 
 dotenv.config();
@@ -24,6 +25,7 @@ const addRoutes = () => {
 
     app.use("/api", router);
     app.use("/api/feed", barkRoutes);
+    app.use("/api/users", userRoutes);
 }
 
 const DBConnection = async () => {
