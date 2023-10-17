@@ -20,6 +20,24 @@ const barkSchema = new mongoose.Schema({
     likes: {
         type: Number,
     },
+
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user",
+    },
+
+    image: {
+        type: String,
+    },
+
+    video: {
+        type: String,
+    },
+
+    favoritedBy: [],
+
+    repliedBy: [],
+
 });
 
 const barkModel = mongoose.model("bark", barkSchema);

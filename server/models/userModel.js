@@ -7,14 +7,19 @@ const userSchema = new mongoose.Schema({
     },
 
     barks: {
-        type: Object,
+        type: [{type: mongoose.Schema.Types.ObjectId, ref: "bark"}],
     },
 
-    dateofcreation: {
+    dateOfCreation: {
         type: Date,
         required: true,
     },
 
+    photo: {
+        type: String,
+    },
+
+    favorites: [],
 });
 
 const userModel = mongoose.model("user", userSchema);
