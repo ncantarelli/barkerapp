@@ -1,13 +1,16 @@
 import { createRoutesFromElements, createBrowserRouter, Route, RouterProvider, Outlet, } from "react-router-dom";
 import Feed from "./views/Feed.tsx"
-import UserProfile from "./views/UserProfile.tsx";
-import OwnProfile from "./views/OwnProfile.tsx";
+import VisitedProfile from "./views/VisitedProfile.tsx";
+import UserPage from "./views/UserPage.tsx";
 import Registration from "./views/Registration.tsx";
 import Login from "./views/Login.tsx";
 import LandingPage from "./views/LandingPage.tsx";
 import Notifications from "./views/Notifications.tsx";
-import Navbar from "./components/Navbar.tsx";
+import Sidebar from "./components/Sidebar.tsx";
 import Footer from "./components/Footer.tsx";
+import About from "./views/About.tsx";
+import Navbar from "./components/Navbar.tsx";
+import ErrorPage from "./views/ErrorPage.tsx";
 
 
 function App() {
@@ -16,14 +19,16 @@ function App() {
 
     createRoutesFromElements(
 
-      <Route path="/" element={<Root/>}>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="feed" element={<Feed />} />
+      <Route path="/" element={<Root />} errorElement={<ErrorPage />}>
+        <Route index path="/" element={<Feed />} />
+        <Route path="landing" element={<LandingPage />} />
         <Route path="registration" element={<Registration />} />
         <Route path="login" element={<Login />} />
-        <Route path="user" element={<UserProfile/>} />
-        <Route path="profile" element={<OwnProfile/>}/>
-        <Route path="Notifications" element={<Notifications/> } />
+        <Route path="user/:user" element={<VisitedProfile />} />
+        <Route path="profile" element={<UserPage />} />
+        <Route path="notifications" element={<Notifications />} />
+        <Route path="about" element={<About />} />
+        {/* <Route path="*" element={<ErrorPage/> } /> */}
       </Route>
 
     )
@@ -32,7 +37,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <Outlet/>
+      <Outlet />
     </>
   );
 };
@@ -40,11 +45,12 @@ function App() {
 const Root = () => {
   return (
     <>
-      <Navbar/>
+      <Sidebar />
+      <Navbar />
       <Outlet />
-      <Footer/>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
 export default App
