@@ -1,33 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { createRoutesFromElements, createBrowserRouter, Route, RouterProvider, Outlet, } from "react-router-dom";
+import Feed from "./views/Feed.tsx"
+import UserProfile from "./views/UserProfile.tsx";
+import OwnProfile from "./views/OwnProfile.tsx";
+import Registration from "./views/Registration.tsx";
+import Login from "./views/Login.tsx";
+import LandingPage from "./views/LandingPage.tsx";
+import Notifications from "./views/Notifications.tsx";
+import Navbar from "./components/Navbar.tsx";
+import Footer from "./components/Footer.tsx";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const router = createBrowserRouter(
+
+    createRoutesFromElements(
+
+      <Route path="/" element={<Root/>}>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="feed" element={<Feed />} />
+        <Route path="registration" element={<Registration />} />
+        <Route path="login" element={<Login />} />
+        <Route path="user" element={<UserProfile/>} />
+        <Route path="profile" element={<OwnProfile/>}/>
+        <Route path="Notifications" element={<Notifications/> } />
+      </Route>
+
+    )
+  );
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <RouterProvider router={router} />
+      <Outlet/>
+    </>
+  );
+};
+
+const Root = () => {
+  return (
+    <>
+      <Navbar/>
+      <Outlet />
+      <Footer/>
     </>
   )
 }
