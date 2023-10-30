@@ -1,0 +1,17 @@
+.navbar {
+    left: 10vw;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 90vw;
+    background-color: #FF6914;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}

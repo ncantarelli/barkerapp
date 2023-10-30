@@ -7,10 +7,11 @@ import Login from "./views/Login.tsx";
 import LandingPage from "./views/LandingPage.tsx";
 import Notifications from "./views/Notifications.tsx";
 import Sidebar from "./components/Sidebar.tsx";
-import Footer from "./components/Footer.tsx";
+// import Footer from "./components/Footer.tsx";
 import About from "./views/About.tsx";
 import Navbar from "./components/Navbar.tsx";
 import ErrorPage from "./views/ErrorPage.tsx";
+import "./style/app-styles.css" 
 
 
 function App() {
@@ -44,12 +45,14 @@ function App() {
 
 const Root = () => {
   return (
-    <>
+    <div className="AppContainer">
       <Sidebar />
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </>
+      <div className="ContentSection">
+        <Navbar />
+        <Outlet />
+      {/* <Footer /> */}
+      </div>
+    </div>
   );
 };
 

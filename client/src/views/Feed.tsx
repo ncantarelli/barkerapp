@@ -1,7 +1,11 @@
+import "../style/feed-styles.css"
 
 function Feed() {
   return (
-    <div>Feed</div>
+    <div className="Feed">
+      <div>FEED</div>
+      <div>FEED</div>
+    </div>
   )
 }
 

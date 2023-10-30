@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    /* background-color: #FF6914; */
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+    border: 1px solid #FF6914;
+    left: 10vw;
+    top: 91vh;
+    position: fixed;
+}

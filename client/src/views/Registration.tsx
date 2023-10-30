@@ -1,7 +1,8 @@
+import "../style/registration-styles.css";
 
 function Registration() {
   return (
-    <>
+    <div className="RegistrationContainer">
       <h1>Registration</h1>
       <form>
         <label>Email<input type="email"></input></label>
@@ -9,7 +10,7 @@ function Registration() {
         <label>Password<input type="password"></input></label>
         <button type="submit">Sign Up!</button>
       </form>
-    </>
+    </div>
   );
 };
 

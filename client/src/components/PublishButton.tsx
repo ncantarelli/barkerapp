@@ -1,8 +1,8 @@
-
+import "../style/button-styles.css";
 
 function PublishButton() {
   return (
-    <div>Bark!</div>
+    <button>Bark!</button>
   )
 }
 

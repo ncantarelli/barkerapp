@@ -1,7 +1,9 @@
 
 function Searchbar() {
   return (
-    <div>Searchbar</div>
+    <div>
+      <input type="text" placeholder="Search!"></input><button>🔎</button>
+    </div>
   )
 }
 
