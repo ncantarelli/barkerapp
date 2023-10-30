@@ -1,8 +1,9 @@
+import "../style/searchbar-styles.css";
 
 function Searchbar() {
   return (
-    <div>
-      <input type="text" placeholder="Search!"></input><button>🔎</button>
+    <div className="Searchbar">
+      <input type="text" placeholder="Search!"></input><button><img src=".\src\assets\search-icon.svg"/></button>
     </div>
   )
 }

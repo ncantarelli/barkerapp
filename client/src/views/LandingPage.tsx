@@ -1,7 +1,9 @@
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
+    <div>
+      <h1>Welcome to Barker</h1>
+    </div>
   )
 }
 

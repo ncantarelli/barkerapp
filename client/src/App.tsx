@@ -9,9 +9,10 @@ import Notifications from "./views/Notifications.tsx";
 import Sidebar from "./components/Sidebar.tsx";
 // import Footer from "./components/Footer.tsx";
 import About from "./views/About.tsx";
-import Navbar from "./components/Navbar.tsx";
+// import Navbar from "./components/Navbar.tsx";
 import ErrorPage from "./views/ErrorPage.tsx";
 import "./style/app-styles.css" 
+import SuggestionBox from "./components/SuggestionBox.tsx";
 
 
 function App() {
@@ -48,9 +49,12 @@ const Root = () => {
     <div className="AppContainer">
       <Sidebar />
       <div className="ContentSection">
-        <Navbar />
+        {/* <Navbar /> */}
         <Outlet />
-      {/* <Footer /> */}
+        {/* <Footer /> */}
+      </div>
+      <div>
+          <SuggestionBox />
       </div>
     </div>
   );

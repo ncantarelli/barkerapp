@@ -9,5 +9,9 @@
     width: 100vw;
 }
 
-
+.ContentSection {
+    width: 60vw;
+    height: 100vh;
+    left: 20vw;
+}
 

@@ -1,15 +1,24 @@
+import { Link } from "react-router-dom";
 import "../style/registration-styles.css";
 
 function Registration() {
   return (
     <div className="RegistrationContainer">
-      <h1>Registration</h1>
+      <div className="HeaderElements">
+        <img src=".\src\assets\logo.svg"></img>
+        <h1>Create an account</h1>
+        <h4>Start barking away!</h4>
+      </div>
       <form>
-        <label>Email<input type="email"></input></label>
-        <label>Username<input type="text"></input></label>
-        <label>Password<input type="password"></input></label>
-        <button type="submit">Sign Up!</button>
+        <label>Email<span>*</span></label><input type="email" required></input>
+        <label>Username<span>*</span></label><input type="text" required></input>
+        <label>Password<span>*</span></label><input type="password" required></input>   
       </form>
+      <button type="submit" className="RegisterButton">Sign Up!</button>
+      <div className="LogInSuggestion">
+        <p>Already have an account?</p>
+        <Link to="/login">Log in</Link>
+      </div>
     </div>
   );
 };
