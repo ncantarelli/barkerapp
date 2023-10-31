@@ -1,0 +1,61 @@
+.SuggestionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 57vh;
+    gap: 20px;
+    /* margin-top: 20px; */
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.FollowSuggestions {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 14vw;
+    border: 2px solid #d1d1d1;
+    border-radius: 10px;
+    background-color: #F8F9FA;
+}
+
+.FollowSuggestions h4 {
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.UserAuthentification {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 10vh;
+    width: 14vw;
+    border: 2px solid #d1d1d1;
+    border-radius: 10px;
+    background-color: #F8F9FA;
+}
+
+.UserAuthentification p {
+    font-weight: 600;
+}
+
+.UserAuthentification a {
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid #FF6914;
+    font-weight: 600;
+}
+.UserAuthentification a:first-child {
+    background-color: white;
+    color: #FF6914;
+}
+
+.UserAuthentification a:last-child {
+    background-color: #FF6914;
+    color: white;
+}

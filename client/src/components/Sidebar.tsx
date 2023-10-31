@@ -19,20 +19,24 @@ function Sidebar() {
           </Link >
           <Link to="Notifications">
             <div className="NavigationLinks">
-            <img src=".\src\assets\notification-icon.svg" alt="" />
-            <p>Notifications</p>
+              <img src=".\src\assets\notification-icon.svg" alt="" />
+              <p>Notifications</p>
             </div>
           </Link >
           <Link to="Profile">
             <div className="NavigationLinks">
-            <img src=".\src\assets\profile-icon.svg" alt="" />
-            <p>Profile</p>
+              <img src=".\src\assets\profile-icon.svg" alt="" />
+              <p>Profile</p>
             </div>
           </Link >
         </div>
       </div>
       {/* <Link to="/"></Link > */}
       <PublishButton />
+      {/* <div>
+        <img src="" />
+        <p>Hey there, Nico!</p>
+      </div> */}
     </div>
       
   );

@@ -1,17 +1,19 @@
 .LoginContainer {
     display: flex;
     flex-direction: column;
-    background-color: #F8F9FA;
-    width: 60vw;
+    background-color: white;
+    width: 30vw;
     height: 100vh;
-    left: 20vw;
+    /* left: 30vw; */
     /* top: 80px; */
     /* bottom: 80px; */
-    position: fixed;
+    /* position: fixed; */
     /* z-index: 0; */
-    /* justify-content: space-around; */
+    /* justify-content: center; */
     align-items: center;
     gap: 50px;
+    box-sizing: border-box;
+    margin: 0 8px 0 8px;
 }
 
 .HeaderElements {
@@ -20,6 +22,7 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+    margin-top: 60px;
 }
 
 .LoginContainer img {
@@ -98,7 +101,7 @@
 .LoginInteractions div {
     display: flex;
     gap: 8px;
-    align-items: center;
+    align-items: baseline;
 }
 
 .LoginInteractions a {

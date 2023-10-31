@@ -4,7 +4,9 @@ function Feed() {
   return (
     <div className="Feed">
       <div>
-        <h1>FEED</h1>
+        <div className="HeaderContainer">
+          <h1>FEED</h1>
+        </div>
         <div>Publishing section</div>
         <div>Where you will see the other barks</div>
       </div>

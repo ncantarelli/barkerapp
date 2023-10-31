@@ -6,11 +6,14 @@
 
 .AppContainer {
     display: flex;
+    justify-content: center;
     width: 100vw;
+    background-color: #F8F9FA;
 }
 
 .ContentSection {
-    width: 60vw;
+    display: flex;
+    width: 30vw;
     height: 100vh;
     left: 20vw;
 }
