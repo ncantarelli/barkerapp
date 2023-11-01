@@ -2,22 +2,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F8F9FA;
+    background-color: #F6F6EF;
     border-radius: 10px;
     height: 50px;
     border: 2px solid #d1d1d1;
+    margin-top: 50px;
 }
 
 .Searchbar input {
     font-size: 18px;
     padding: 10px;
-    width: 10vw;
+    width: 13vw;
     height: auto;
     border-radius: 10px;
     /* margin-bottom: 16px; */
     /* margin-top: 8px; */
     outline: none;
-    background-color: #F8F9FA;
+    background-color: #F6F6EF;
 }
 
 .Searchbar button {
@@ -30,4 +31,8 @@
 .Searchbar button:hover {
     cursor: pointer;
     background-color: rgb(238, 238, 238);
+}
+
+.Searchbar input:focus {
+    background-color: white;
 }

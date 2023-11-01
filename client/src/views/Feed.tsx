@@ -1,14 +1,24 @@
+import IndividualPost from "../components/IndividualPost"
 import "../style/feed-styles.css"
 
 function Feed() {
+
+  
+
   return (
     <div className="Feed">
       <div>
         <div className="HeaderContainer">
           <h1>FEED</h1>
         </div>
-        <div>Publishing section</div>
-        <div>Where you will see the other barks</div>
+        <div className="PublishingArea">
+          <textarea placeholder="What's happening around?"></textarea>
+          <div>
+            <img src=""></img>
+            <button>Publish</button>
+          </div>
+        </div>
+        <IndividualPost />       
       </div>
       {/* <div>FEED</div> */}
     </div>

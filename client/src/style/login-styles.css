@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 30vw;
+    width: 60vw;
     height: 100vh;
-    /* left: 30vw; */
+    left: 20vw;
     /* top: 80px; */
     /* bottom: 80px; */
     /* position: fixed; */
@@ -26,7 +26,7 @@
 }
 
 .LoginContainer img {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .LoginContainer h1 {
@@ -59,7 +59,12 @@
     margin-bottom: 16px;
     margin-top: 8px;
     outline: none;
-    border: 2px solid #FF6914;
+    border: 2px solid #BF4BEC;
+    background-color: #F6F6EF;
+}
+
+.LoginContainer form input:focus {
+    background-color: white;
 }
 
 .LoginContainer label {
@@ -75,15 +80,15 @@
     font-size: 18px;
     font-weight: 600;
     color: white;
-    background-color: #FF6914;
+    background-color: #BF4BEC;
     border-radius: 20px;
-    border: 1PX solid #FF6914;
+    border: 1PX solid #BF4BEC;
     width: 150px;
     height: 40px;
 }
 
 .LoginButton:hover {
-    background-color: #db5c12;
+    background-color: #a640ce;
     cursor: pointer;
 }
 
@@ -105,11 +110,12 @@
 }
 
 .LoginInteractions a {
-    color: #FF6914;
-    text-decoration: underline;
+    color: #BF4BEC;
+    text-decoration: none;
     cursor: pointer;
 }
 
 .LoginInteractions a:hover {
-    color: #db5c12;
+    color: #a640ce;
+    text-decoration: underline;
 }

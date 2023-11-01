@@ -8,7 +8,10 @@ function Sidebar() {
     <div className="Sidebar">
       <div className="ElementsContainer">
         <div className="Logo" >
-          <Link to="/"><img src=".\src\assets\logo.svg" /></Link>
+          {/* <Link to="/"><img src=".\src\assets\logo.svg" /></Link> */}
+          {/* <Link to="/"><img src=".\src\assets\logo-green.svg" /></Link> */}
+          {/* <Link to="/"><img src=".\src\assets\logo-black-green.svg" /></Link> */}
+          <Link to="/"><img src=".\src\assets\logo-purple.svg" /></Link>
         </div>
         <div className="LinksContainer">
           <Link to="/">
@@ -17,13 +20,13 @@ function Sidebar() {
               <p>Feed</p>
             </div>
           </Link >
-          <Link to="Notifications">
+          <Link to="notifications">
             <div className="NavigationLinks">
               <img src=".\src\assets\notification-icon.svg" alt="" />
               <p>Notifications</p>
             </div>
           </Link >
-          <Link to="Profile">
+          <Link to="profile">
             <div className="NavigationLinks">
               <img src=".\src\assets\profile-icon.svg" alt="" />
               <p>Profile</p>

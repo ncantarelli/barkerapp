@@ -4,7 +4,10 @@ function Login() {
   return (
     <div className="LoginContainer">
       <div className="HeaderElements">
-        <img src=".\src\assets\logo.svg"></img>
+        {/* <img src=".\src\assets\logo.svg"></img> */}
+        {/* <img src=".\src\assets\logo-green.svg"></img> */}
+        {/* <img src=".\src\assets\logo-black-green.svg"></img> */}
+        <img src=".\src\assets\logo-purple.svg"></img>
         <h1>Log in to your account</h1>
         <h4>Welcome back!</h4>
       </div>

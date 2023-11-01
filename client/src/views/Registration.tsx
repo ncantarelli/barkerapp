@@ -5,7 +5,10 @@ function Registration() {
   return (
     <div className="RegistrationContainer">
       <div className="HeaderElements">
-        <img src=".\src\assets\logo.svg"></img>
+        {/* <img src=".\src\assets\logo.svg"></img> */}
+        {/* <img src=".\src\assets\logo-green.svg"></img> */}
+        {/* <img src=".\src\assets\logo-black-green.svg"></img> */}
+        <img src=".\src\assets\logo-purple.svg"></img>
         <h1>Create an account</h1>
         <h4>Start barking away!</h4>
       </div>

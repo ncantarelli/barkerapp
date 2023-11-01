@@ -26,7 +26,7 @@
 }
 
 .RegistrationContainer img {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .RegistrationContainer h1 {
     text-align: center;
@@ -58,7 +58,13 @@
     margin-bottom: 16px;
     margin-top: 8px;
     outline: none;
-    border: 2px solid #FF6914;
+    border: 2px solid #BF4BEC;
+    /* border: 2px solid #CDEB69; */
+    background-color: #F6F6EF;
+}
+
+.RegistrationContainer input:focus {
+    background-color: white;
 }
 
 .RegistrationContainer label {
@@ -68,7 +74,8 @@
 }
 
 .RegistrationContainer span {
-    color: #FF6914;
+    color: #BF4BEC;
+    /* color: #CDEB69; */
 }
 
 .RegisterButton {
@@ -76,15 +83,17 @@
     font-size: 18px;
     font-weight: 600;
     color: white;
-    background-color: #FF6914;
+    background-color: #BF4BEC;
+    /* background-color: #CDEB69; */
     border-radius: 20px;
-    border: 1PX solid #FF6914;
+    border: 1PX solid #BF4BEC;
+    /* border: 1PX solid #CDEB69; */
     width: 150px;
     height: 40px;
 }
 
 .RegisterButton:hover {
-    background-color: #db5c12;
+    background-color: #a640ce;
     cursor: pointer;
 }
 
@@ -100,12 +109,14 @@
 }
 
 .LogInSuggestion a {
-    color: #FF6914;
-    text-decoration: underline;
+    color: #BF4BEC;
+    /* color: #CDEB69; */
+    text-decoration: none;
     line-height: 150%;
 }
 
 .LogInSuggestion a:hover {
-    color: #db5c12;
+    color: #a640ce;
     cursor: pointer;
+    text-decoration: underline;
 }
