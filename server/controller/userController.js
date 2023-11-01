@@ -9,4 +9,9 @@ const getAllUsers = async (req, res) => {
     });
 };
 
-export { getAllUsers };
+const uploadImage = async (req, res) => {
+    console.log('req.file :>> ', req.file);
+}   
+
+
+export { getAllUsers, uploadImage };

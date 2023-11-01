@@ -3,6 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import * as dotenv from "dotenv";
 import colors from "colors";
+
 import router from "./routes/testRoute.js";
 import barkRoutes from "./routes/barkRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
