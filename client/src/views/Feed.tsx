@@ -15,7 +15,8 @@ function Feed() {
     <div className="Feed">
       <div>
         <div className="HeaderContainer">
-            <h1>Feed</h1>
+          <h1 className="Active">Feed</h1>
+          <h1 className="Inactive">Following</h1>
         </div>
         <div className="PublishingArea">
           <textarea placeholder="What's happening around?"></textarea>

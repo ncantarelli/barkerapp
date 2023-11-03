@@ -18,23 +18,34 @@
 
 .HeaderContainer {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     /* background-color: #FF6914; */
     /* color: white; */
     color: #BF4BEC;
     /* height: 100px; */
     /* width: 30vw; */
-    border-radius: 0 0 20px 20px;
+    /* border-radius: 0 0 20px 20px; */
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
     /* padding: 20px; */
     /* margin-top: 20px; */
+    /* gap:; */
+}
+
+.Active {
+    border-bottom: 2px solid #BF4BEC;
+}
+
+.Inactive {
+    border-bottom: 2px solid white;
 }
 
 .HeaderContainer h1 {
-    font-size: 42px;
+    font-size: 36px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 .PublishingArea {

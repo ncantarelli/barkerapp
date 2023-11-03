@@ -16,7 +16,7 @@ function Registration() {
         <label>Profile Image</label>
         <label className="ProfilePictureInput">
           <img src=".\src\assets\upload-icon.svg" alt="Media" />
-          <input type="file" className="Hidden" name="file"></input>
+          <input type="file" className="Hidden" name="file" multiple={false}></input>
         </label>
         <label>Email<span>*</span></label><input type="email" required></input>
         <label>Username<span>*</span></label><input type="text" required></input>
