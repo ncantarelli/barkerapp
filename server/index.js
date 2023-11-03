@@ -7,6 +7,7 @@ import colors from "colors";
 import router from "./routes/testRoute.js";
 import barkRoutes from "./routes/barkRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
+import cloudinaryConfig from "./config/cloudinaryConfig.js";
 
 
 dotenv.config();
@@ -20,6 +21,7 @@ const addMiddlewares = () => {
             extended: true,
         })
     );
+    cloudinaryConfig();
 };
 
 const addRoutes = () => {

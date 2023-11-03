@@ -1,15 +1,15 @@
 .Sidebar {
     display: flex;
     flex-direction: column;
-    /* position: fixed; */
-    /* left: 20vw; */
+    /* position: absolute; */
+    /* left: 5vw; */
     width: 15vw;
     height: 61vh;
     /* justify-content: space-between; */
     align-items: center;
     z-index: 3;
     background-color: white;
-    border-radius: 0 0 20px 20px;
+    /* border-radius: 0 0 20px 20px; */
 }
 
 .ElementsContainer {

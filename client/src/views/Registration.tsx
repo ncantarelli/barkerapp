@@ -13,11 +13,19 @@ function Registration() {
         <h4>Start barking away!</h4>
       </div>
       <form>
+        <label>Profile Image</label>
+        <label className="ProfilePictureInput">
+          <img src=".\src\assets\upload-icon.svg" alt="Media" />
+          <input type="file" className="Hidden" name="file"></input>
+        </label>
         <label>Email<span>*</span></label><input type="email" required></input>
         <label>Username<span>*</span></label><input type="text" required></input>
-        <label>Password<span>*</span></label><input type="password" required></input>   
+        <label>Password<span>*</span></label><input type="password" required></input>
+        <div>
+          <button type="submit" className="RegisterButton">Sign Up!</button>
+        </div>
       </form>
-      <button type="submit" className="RegisterButton">Sign Up!</button>
+        
       <div className="LogInSuggestion">
         <p>Already have an account?</p>
         <Link to="/login">Log in</Link>

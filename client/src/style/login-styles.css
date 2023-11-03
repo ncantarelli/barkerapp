@@ -85,6 +85,7 @@
     border: 1PX solid #BF4BEC;
     width: 150px;
     height: 40px;
+    margin-top: 20px;
 }
 
 .LoginButton:hover {
@@ -96,7 +97,7 @@
     display: flex;
     align-items: center;
     gap: 135px;
-    margin-top: -50px;
+    margin-top: -135px;
 }
 
 .LoginInteractions label {

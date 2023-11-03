@@ -14,12 +14,19 @@ function Login() {
       <form>
         <label>Email</label><input type="email" required></input>
         <label>Password</label><input type="password" required></input>
+        <div>
+          
+          <button type="submit" className="LoginButton">Login!</button>
+        </div> 
       </form>
       <div className="LoginInteractions">
-        <div><input type="radio" className="RadioInput"></input><label>Remember me</label></div>
-        <a>Forgot password</a>
+            <div>
+              <input type="radio" className="RadioInput"></input>
+              <label>Remember me</label>
+            </div>
+            <a>Forgot password</a>
       </div>
-      <button type="submit" className="LoginButton">Login!</button>
+      
     </div>
   );
 };

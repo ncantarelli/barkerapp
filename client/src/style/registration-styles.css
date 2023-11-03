@@ -25,9 +25,6 @@
     margin-top: 60px;
 }
 
-.RegistrationContainer img {
-    margin-top: 30px;
-}
 .RegistrationContainer h1 {
     text-align: center;
     font-size: 40px;
@@ -79,7 +76,8 @@
 }
 
 .RegisterButton {
-    margin-top: -30px;
+    /* margin-top: -30px; */
+    /* position: center; */
     font-size: 18px;
     font-weight: 600;
     color: white;
@@ -90,6 +88,7 @@
     /* border: 1PX solid #CDEB69; */
     width: 150px;
     height: 40px;
+    /* margin-left: 5.9vw; */
 }
 
 .RegisterButton:hover {
@@ -119,4 +118,37 @@
     color: #a640ce;
     cursor: pointer;
     text-decoration: underline;
+}
+
+.ProfilePictureInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 6px;
+    border-radius: 10px;
+    /* height: 24px; */
+    /* width: 24px; */
+    border: 2px solid #BF4BEC;
+    background-color: #F6F6EF;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.ProfilePictureInput img {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 6px;
+}
+
+.ProfilePictureInput:hover {
+    background-color: #a640ce41;
+    cursor: pointer;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
