@@ -1,7 +1,17 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-    username: {
+    userName: {
+        type: String,
+        required: true,
+    },
+
+    email: {
+        type: String,
+        required: true,
+    },
+
+    password: {
         type: String,
         required: true,
     },
@@ -12,14 +22,18 @@ const userSchema = new mongoose.Schema({
 
     dateOfCreation: {
         type: Date,
-        required: true,
+        // required: true,
     },
 
-    photo: {
+    userImage: {
         type: String,
     },
 
     favorites: [],
+
+    followedBy: [],
+
+    follows: [],
 });
 
 const userModel = mongoose.model("user", userSchema);

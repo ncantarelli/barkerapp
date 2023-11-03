@@ -12,7 +12,8 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    background-color: #F6F6EF;
+    /* height: 100%; */
+    /* background-color: #F6F6EF; */
     /* margin: 0 20vw 0 20vw; */
 }
 

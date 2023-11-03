@@ -68,6 +68,7 @@
     font-size: 20px;
     line-height: 150%;
     font-weight: 400;
+    width: 368px;
 }
 
 .RegistrationContainer span {
@@ -151,4 +152,44 @@ form div {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.uploadedImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    /* padding: 0 50px; */
+}
+
+.uploadedImage {
+    height: 120px;
+    border-radius: 100px;
+    /* margin-bottom: 16px; */
+    /* margin-top: -21px; */
+    border: white solid 5px;
+    width: 120px;
+    transition: all .2s ease-in-out;
+    margin-top: 10px;
+}
+
+.uploadedImage:hover {
+    cursor: pointer;
+    border: #BF4BEC 5px solid;
+    transform: scale(1.1);
+}
+
+.HiddenImage {
+    display: none;
+    height: 120px;
+    width: 120px;
+}
+
+.alignmentUploadedImage {
+    margin-top: 0px;
+}
+
+.ImageUploadBox {
+    margin-bottom: -48px;
 }

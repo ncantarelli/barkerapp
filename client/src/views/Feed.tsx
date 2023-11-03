@@ -1,15 +1,10 @@
-import { ChangeEvent } from "react"
+import { ChangeEvent, useState } from "react"
 import IndividualPost from "../components/IndividualPost"
 import "../style/feed-styles.css"
 
 function Feed() {
 
 
-
-  const handleFileInput = (e:ChangeEvent<HTMLInputElement>) => {
-    console.log('e :>> ', e);
-  }
-  
 
   return (
     <div className="Feed">
@@ -23,16 +18,16 @@ function Feed() {
           <div className="PublishingInteractions">
             <label>
               <img src=".\src\assets\upload-icon.svg" alt="Media" />
-              <input type="file" className="Hidden" name="file" multiple={true} onChange={handleFileInput}/>
+              <input type="file" className="Hidden" name="file" multiple={true} />
             </label>
             <button>Publish</button>
           </div>
         </div>
-        <IndividualPost />       
+        <IndividualPost />
       </div>
       {/* <div>FEED</div> */}
     </div>
-  )
-}
+  );
+};
 
 export default Feed
