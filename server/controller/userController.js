@@ -1,6 +1,7 @@
 import { v2 as cloudinary } from 'cloudinary';
 import userModel from "../models/userModel.js";
 import { hashPassword, verifyPassword } from '../utils/passwordServices.js';
+import { generateToken } from '../utils/tokenServices.js';
 
 
 const getAllUsers = async (req, res) => {
@@ -113,10 +114,29 @@ const login = async (req, res) => {
 
             }
             if (checkPassword) {
+
+                const token = generateToken(existingUser.id);
+
+                if (token) {
+                    res.status(200).json({
+                        message: "Successfully logged in!",
+                        user: {
+                            userName: existingUser.userName,
+                            email: existingUser.email,
+                            userImage: existingUser.userImage,
+                        },
+                        token
+                    });
+                } else {
+                    res.status(400).json({
+                        message: "Something went wrong with your request."
+                    });
+                };
+
                 // email exists in DB and password is correct!
                 res.status(200).json({
                     message: "You are logged in!",
-                })
+                });
              };
 
         };
