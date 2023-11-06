@@ -101,6 +101,7 @@
     display: flex;
     gap: 5px;
     align-items: baseline;
+    margin-top: 20px;
 }
 
 .LogInSuggestion p {
@@ -159,7 +160,7 @@ form div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 0px;
     /* padding: 0 50px; */
 }
 
@@ -188,6 +189,8 @@ form div {
 
 .alignmentUploadedImage {
     margin-top: 0px;
+    /* width: 120px; */
+    display: flex;
 }
 
 .ImageUploadBox {

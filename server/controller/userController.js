@@ -1,6 +1,6 @@
 import { v2 as cloudinary } from 'cloudinary';
 import userModel from "../models/userModel.js";
-import { hashPassword } from '../utils/hashPassword.js';
+import { hashPassword, verifyPassword } from '../utils/passwordServices.js';
 
 
 const getAllUsers = async (req, res) => {
@@ -19,7 +19,7 @@ const uploadImage = async (req, res) => {
             const uploadedImage = await cloudinary.uploader.upload(req.file.path, { folder: "barkerapp/userProfileImages" })
             console.log('uploadedImage :>> ', uploadedImage);
 
-            res.status(200).json({
+            res.status(201).json({
                 message: "Image uploaded successfully.",
                 userImage: uploadedImage.secure_url,
             });
@@ -28,7 +28,7 @@ const uploadImage = async (req, res) => {
             console.log('error :>> ', error);
         };
     } else {
-        res.status(500).json({error:"File type not supported"})
+        res.status(415).json({error:"File type not supported"})
     };
     
 };
@@ -90,4 +90,45 @@ const register = async (req, res) => {
     // }
 };
 
-export { getAllUsers, uploadImage, register };
+const login = async (req, res) => {
+    console.log("login working");
+    console.log('req.body :>> ', req.body);
+    try {
+        const existingUser = await userModel.findOne({ email: req.body.email })
+        if (!existingUser) {
+            res.status(404).json({
+                message: "No user exists with this email"
+            });
+        } else {
+            const checkPassword = await verifyPassword(
+                req.body.password,
+                existingUser.password
+            );
+            if (!checkPassword) {
+                // This means the password is wrong
+
+                res.status(401).json({
+                    message: "Wrong password, try again",
+                });
+
+            }
+            if (checkPassword) {
+                // email exists in DB and password is correct!
+                res.status(200).json({
+                    message: "You are logged in!",
+                })
+             };
+
+        };
+
+
+    } catch (error) {
+
+        res.status(404).json({
+            message: "No user exists with this email"
+
+        });
+    };
+
+};
+export { getAllUsers, uploadImage, register, login };
