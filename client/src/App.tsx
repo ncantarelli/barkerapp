@@ -16,7 +16,7 @@ import SuggestionBox from "./components/SuggestionBox.tsx";
 
 
 function App() {
-
+console.log("app working");
   const router = createBrowserRouter(
 
     createRoutesFromElements(
