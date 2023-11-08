@@ -13,10 +13,13 @@ import About from "./views/About.tsx";
 import ErrorPage from "./views/ErrorPage.tsx";
 import "./style/app-styles.css" 
 import SuggestionBox from "./components/SuggestionBox.tsx";
+import { useEffect, useState } from "react";
 
 
 function App() {
-console.log("app working");
+  // console.log("app working");
+
+
   const router = createBrowserRouter(
 
     createRoutesFromElements(

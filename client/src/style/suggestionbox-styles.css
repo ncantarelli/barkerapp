@@ -50,26 +50,26 @@
     padding: 8px 16px;
     border-radius: 20px;
     text-decoration: none;
-    border: 2px solid #BF4BEC;
+    border: 2px solid #8E8CED;
     font-weight: 600;
 }
 .UserAuthentification a:first-child {
     background-color: white;
-    color: #BF4BEC;
-    border: 2px solid #BF4BEC;
+    color: #8E8CED;
+    border: 2px solid #8E8CED;
 }
 
 .UserAuthentification a:last-child {
-    background-color: #BF4BEC;
+    background-color: #8E8CED;
     color: white;
 }
 
 .UserAuthentification a:first-child:hover {
     background-color: rgb(255, 252, 252);
-    border: 2px solid #a640ce;
+    border: 2px solid #8281db;
 }
 
 .UserAuthentification a:last-child:hover {
-    background-color: #a640ce;
-    border: 2px solid #a640ce;
+    background-color: #8281db;
+    border: 2px solid #8281db;
 }

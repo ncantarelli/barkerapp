@@ -2,9 +2,9 @@
     font-size: 20px;
     font-weight: 600;
     color: white;
-    background-color: #BF4BEC;
+    background-color: #8E8CED;
     border-radius: 20px;
-    border: 1PX solid #BF4BEC;
+    border: 1PX solid #8E8CED;
     width: 150px;
     height: 40px;
     margin-top: 50px;
@@ -12,6 +12,6 @@
 }
 
 .PublishButton:hover {
-    background-color: #a640ce;
+    background-color: #8281db;
     cursor: pointer;
 }

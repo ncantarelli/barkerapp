@@ -22,7 +22,7 @@
     align-items: center;
     /* background-color: #FF6914; */
     /* color: white; */
-    color: #BF4BEC;
+    color: #8E8CED;
     /* height: 100px; */
     /* width: 30vw; */
     /* border-radius: 0 0 20px 20px; */
@@ -35,7 +35,7 @@
 }
 
 .Active {
-    border-bottom: 2px solid #BF4BEC;
+    border-bottom: 2px solid #8E8CED;
 }
 
 .Inactive {
@@ -88,7 +88,7 @@
 }
 
 .PublishingInteractions label:hover {
-    background-color: #a640ce41;
+    background-color: #8381db5b;
     cursor: pointer;
 }
 
@@ -98,18 +98,18 @@
 
 .PublishingInteractions button {
     font-size: 18px;
-    background-color: #BF4BEC;
+    background-color: #8E8CED;
     padding: 6px 12px;
     border-radius: 20px;
     color: white;
     font-weight: 600;
     /* margin-right: 10px; */
-    border: #BF4BEC 2px solid;
+    border: #8E8CED 2px solid;
 }
 
 .PublishingInteractions button:hover {
-    background-color: #a640ce;
-    border: #a640ce 2px solid;
+    background-color: #8281db;
+    border: #8281db 2px solid;
     cursor: pointer;
 }
 

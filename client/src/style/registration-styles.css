@@ -55,7 +55,7 @@
     margin-bottom: 16px;
     margin-top: 8px;
     outline: none;
-    border: 2px solid #BF4BEC;
+    border: 2px solid #8E8CED;
     /* border: 2px solid #CDEB69; */
     background-color: #F6F6EF;
 }
@@ -72,7 +72,7 @@
 }
 
 .RegistrationContainer span {
-    color: #BF4BEC;
+    color: #8E8CED;
     /* color: #CDEB69; */
 }
 
@@ -82,10 +82,10 @@
     font-size: 18px;
     font-weight: 600;
     color: white;
-    background-color: #BF4BEC;
+    background-color: #8E8CED;
     /* background-color: #CDEB69; */
     border-radius: 20px;
-    border: 1PX solid #BF4BEC;
+    border: 1PX solid #8E8CED;
     /* border: 1PX solid #CDEB69; */
     width: 150px;
     height: 40px;
@@ -93,7 +93,7 @@
 }
 
 .RegisterButton:hover {
-    background-color: #a640ce;
+    background-color: #8281db;
     cursor: pointer;
 }
 
@@ -110,14 +110,14 @@
 }
 
 .LogInSuggestion a {
-    color: #BF4BEC;
+    color: #8E8CED;
     /* color: #CDEB69; */
     text-decoration: none;
     line-height: 150%;
 }
 
 .LogInSuggestion a:hover {
-    color: #a640ce;
+    color: #8281db;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -130,7 +130,7 @@
     border-radius: 10px;
     /* height: 24px; */
     /* width: 24px; */
-    border: 2px solid #BF4BEC;
+    border: 2px solid #8E8CED;
     background-color: #F6F6EF;
     margin-bottom: 16px;
     margin-top: 8px;
@@ -177,7 +177,7 @@ form div {
 
 .uploadedImage:hover {
     cursor: pointer;
-    border: #BF4BEC 5px solid;
+    border: #8E8CED 5px solid;
     transform: scale(1.1);
 }
 

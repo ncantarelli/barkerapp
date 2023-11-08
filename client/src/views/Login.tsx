@@ -30,7 +30,7 @@ function Login() {
 
   const handleSubmitLogin = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('loginCredentials :>> ', loginCredentials);
+    // console.log('loginCredentials :>> ', loginCredentials);
 
     // const myHeaders = new Headers();
     // myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
@@ -51,7 +51,7 @@ function Login() {
       if (response.ok) {
 
         const result: LoginResponse = await response.json();
-        console.log('result :>> ', result);
+        // console.log('result :>> ', result);
         const token = result.token;
         if (token) {
           localStorage.setItem("token", token);
@@ -63,14 +63,28 @@ function Login() {
     };
   };
 
+  const [isUserLogged, setIsUserLogged] = useState(false);
+  
   const isUserLoggedIn = () => {
     const token = localStorage.getItem("token")
     return token ? true : false;
   };
 
+  const logout = () => {
+    localStorage.removeItem("token");
+    setIsUserLogged(false);
+  }
+  
   useEffect(() => {
     const isLoggedIn = isUserLoggedIn();
-  })
+    if (isLoggedIn) {
+      console.log("user logged in");
+      setIsUserLogged(true);
+    } else {
+      console.log("user is NOT logged in");
+      setIsUserLogged(false);
+    };
+  }, [isUserLogged]);
 
   return (
     <div className="LoginContainer">
@@ -87,6 +101,7 @@ function Login() {
         <label>Password</label><input name="password" type="password" required onChange={handleLoginInput}></input>
         <div>
           <button type="submit" className="LoginButton">Login!</button>
+          <button type="submit" className="LoginButton" onClick={logout}>Logout!</button>
         </div>
       </form>
       <div className="LoginInteractions">

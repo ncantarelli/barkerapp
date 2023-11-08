@@ -74,21 +74,6 @@ const register = async (req, res) => {
         res.status(500).json({ message: "something went wrong." });
     };
 
-
-
-
-
-    // try {
-    //     const newUser = new userModel({
-    //         userName: req.body.userName,
-    //         email: req.body.email,
-    //         password: req.body.password,
-    //         userImage: req.body.userImage,
-    //         dateOfCreation:req.body.dateOfCreation,
-    //     })
-    // } catch (error) {
-        
-    // }
 };
 
 const login = async (req, res) => {
@@ -134,9 +119,9 @@ const login = async (req, res) => {
                 };
 
                 // email exists in DB and password is correct!
-                res.status(200).json({
-                    message: "You are logged in!",
-                });
+                // res.status(200).json({
+                //     message: "You are logged in!",
+                // });
              };
 
         };
